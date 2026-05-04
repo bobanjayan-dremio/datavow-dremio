@@ -290,7 +290,7 @@ dbt_bikes_project:
       enterprise_catalog_folder: datavow
       enterprise_catalog_namespace: dremio_catalog
       pat: <your-personal-access-token>
-      port: 443
+      port: <port>
       software_host: <your-dremio-elb-or-hostname>
       threads: 1
       type: dremio
