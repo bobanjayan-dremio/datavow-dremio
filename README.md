@@ -307,8 +307,12 @@ version: 2
 
 sources:
   - name: samples_citibike
-    schema: "samples.dremio.com"
     database: Samples
+    schema: "samples.dremio.com"
+    quoting:
+      database: true
+      schema: true
+      identifier: true
     tables:
       - name: citibikes
 ```
