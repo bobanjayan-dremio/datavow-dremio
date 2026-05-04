@@ -798,6 +798,10 @@ which python                   # should point to .venv/bin/python
 # Verify dbt can find profiles and project
 dbt debug --profiles-dir dbt/
 
+# Create softlink to ~/.dbt/profiles.yml
+mkdir -p ~/.dbt
+ln -s dbt/profiles.yml ~/.dbt/profiles.yml
+
 # Confirm profiles symlinked to home directory
 ls -l ~/.dbt/profiles.yml
 ```
