@@ -308,10 +308,10 @@ version: 2
 sources:
   - name: samples_citibike
     database: Samples
-    schema: "samples.dremio.com"
+    schema: '"samples.dremio.com"'   # inner quotes force dbt to treat it as a single identifier
     quoting:
       database: true
-      schema: true
+      schema: false                  # false because we're manually quoting above
       identifier: true
     tables:
       - name: citibikes
