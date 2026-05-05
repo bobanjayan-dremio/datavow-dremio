@@ -568,7 +568,7 @@ from {{ ref('brz_citibikes') }}
 where starttime    is not null
   and stoptime     is not null
   and tripduration is not null
-  and cast(tripduration as double) > 0
+  and cast(tripduration as double) > 0  -- ← remove this line to test failure
 ```
 
 ### 6.9 models/gold/gld_station_usage.sql
