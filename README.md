@@ -638,6 +638,16 @@ group by
 - SQL rules require both `query` and `threshold` keys
 - **Do NOT add** `required`, `unique`, or `allowed_values` in `schema.fields` — these generate yml files that conflict with `models/schema.yml`
 
+Run after dbt run so manifest.json exists in target/ to generate the skeleton of contract files. This will cover basic quality rules. It will NOT generate your custom quality rules 
+
+```
+# Generate the skeleton
+datavow dbt generate \
+  --manifest target/manifest.json \
+  --output contracts/generated/ \
+  --owner data-team@company.com
+```
+
 ### 7.1 contracts/citibikes_bronze.yaml
 
 ```yaml
