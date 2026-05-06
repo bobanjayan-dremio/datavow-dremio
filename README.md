@@ -2,7 +2,7 @@
 ## Data Contract Enforcement for the Lakehouse
 
 > **CitiBike Reference Implementation**  
-> DataVow v0.4.0 · Dremio 26.x · dbt-dremio 1.10.0 · Python 3.12 · EC2 Amazon Linux
+> DataVow v0.4.0 · Dremio 26.x · dbt-dremio 1.10.0 · Python 3.12 
 
 ---
 
