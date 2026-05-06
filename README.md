@@ -944,4 +944,6 @@ rm -f tests/datavow/*.yml    # prevent schema.yml conflict
 
 ---
 
-*Author: Boban Jayan, Dremio Field Engineering — April 2026*
+Refer :-
+https://github.com/dremio/dbt-dremio
+https://docs.dremio.com/current/data-products/deploy-with-dbt/
